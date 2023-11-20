@@ -75,9 +75,10 @@
 
 .text {
   padding: 0;
+  color: $primary-light;
 
   svg {
-    color: $black;
+    color: $primary-light;
     fill: $white;
     transition: $transition-default;
   }

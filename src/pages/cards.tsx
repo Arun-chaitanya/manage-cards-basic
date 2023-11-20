@@ -18,6 +18,7 @@ import Text from "@components/Text";
 import Title from "@components/Title";
 import AddCardModal from "@views/AddCardModal";
 
+import bluePlusIcon from "@icons/BluePlus.svg";
 import cancelCard from "@icons/CancelCard.svg";
 import cardDetails from "@icons/CardDetails.svg";
 import cardLogo from "@icons/CardLogo.svg";
@@ -32,6 +33,7 @@ import plusIcon from "@icons/Plus.svg";
 import replaceCard from "@icons/ReplaceCard.svg";
 import spendLimit from "@icons/SpendLimit.svg";
 import visaLogo from "@icons/VisaLogo.svg";
+import mobileLogo from "@icons/MobileLogo.svg";
 
 import styles from "@styles/Cards.module.scss";
 
@@ -109,7 +111,7 @@ const Home: NextPage = () => {
             </Title>
           </div>
         </div>
-        <Button leftIcon={plusIcon} onClick={() => setShowAddCardModal(true)}>
+        <Button leftIcon={isMobile ? bluePlusIcon : plusIcon} onClick={() => setShowAddCardModal(true)} variant={isMobile ? "text" : "contained"}>
           New Card
         </Button>
       </div>
@@ -444,6 +446,10 @@ const Home: NextPage = () => {
     return (
       <div className={styles.mobile}>
         <div className={styles.sticky}>
+          <div  className={styles.mobileLogo}>
+            <Image src={mobileLogo} height={25} width={25}/>
+          </div>
+
           <Container>
             {renderPageHeader()}
             {renderNav()}
@@ -457,6 +463,7 @@ const Home: NextPage = () => {
             {renderCardTransactions()}
           </Container>
         </div>
+
       </div>
     );
   };
