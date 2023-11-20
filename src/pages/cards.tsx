@@ -80,7 +80,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     if (typeof localStorage !== "undefined" && localStorage.getItem("CARD_DATA")) {
-      setCardsData(JSON.parse(localStorage.getItem("CARD_DATA")));
+      setCardsData(JSON.parse(localStorage.getItem("CARD_DATA") || "{}"));
     } else if (typeof localStorage !== "undefined" && !localStorage.getItem("CARD_DATA")) {
       setCardsData(FIRST_DATA);
       localStorage.setItem("CARD_DATA", JSON.stringify(FIRST_DATA));
@@ -194,17 +194,16 @@ const Home: NextPage = () => {
         className={styles.modal}
         classes={{ body: isMobile ? "" : "ph20" }}
         onClose={() => setShowCancelCard(false)}
-        isLightMode
       >
         <div className="mb20 flex align-center justify-between">
-          <Title font="saphiro" color="dark" variant={isMobile ? "h4" : "h1"}>
+          <Title color="dark" variant={isMobile ? "h4" : "h1"}>
             Cancel Card
           </Title>
         </div>
         <Text align={isMobile ? "center" : "left"} className="mb20" color="dark" size={isMobile ? "xl" : "lg"}>
           Are you sure you want to cancel your card.
         </Text>
-        <Button fullWidth onClick={handleCancelCard} isLetterSpacing>
+        <Button fullWidth onClick={handleCancelCard}>
           Cancel Card
         </Button>
       </Modal>
@@ -240,13 +239,13 @@ const Home: NextPage = () => {
             {isShowCard ? (
               <>
                 <Text color="light" weight="bold">
-                  {card.cardNumber.slice(0,4)}
+                  {card.cardNumber.slice(0, 4)}
                 </Text>
                 <Text color="light" weight="bold">
-                  {card.cardNumber.slice(4,8)}
+                  {card.cardNumber.slice(4, 8)}
                 </Text>
                 <Text color="light" weight="bold">
-                  {card.cardNumber.slice(8,12)}
+                  {card.cardNumber.slice(8, 12)}
                 </Text>
               </>
             ) : (

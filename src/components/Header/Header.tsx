@@ -60,7 +60,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.root} data-testid="header">
-      <Logo href={"/"} />
+      <Logo />
       <Text color="grey1" size="lg" className="mb100 mt25">
         Trusted way of banking for 3,000+ SMEs and startups in Singapore
       </Text>

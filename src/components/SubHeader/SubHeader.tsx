@@ -22,14 +22,14 @@ const SubHeader: React.FC<SubHeaderProps> = (props) => {
             <div className="flex items-center gap-6">
               {href || onClick ? <ArrowLeft className="text-[24px] translate-y-px" onClick={href} /> : null}
               {title && (
-                <Title variant={titleVariant} className="mt5">
+                <Title variant={titleVariant || "h1"} className="mt5">
                   {title}
                 </Title>
               )}
             </div>
 
             {description && (
-              <Text color={textColor || "grey6"} size="sm" className="mt5">
+              <Text color={textColor || "dark"} size="sm" className="mt5">
                 {description}
               </Text>
             )}
@@ -52,7 +52,7 @@ type SubHeaderProps = React.PropsWithChildren<{
   title?: string;
   description?: string;
   titleVariant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  textColor?: "dark" | "grey6" | "black";
+  textColor?: "dark";
 }>;
 
 export default SubHeader;

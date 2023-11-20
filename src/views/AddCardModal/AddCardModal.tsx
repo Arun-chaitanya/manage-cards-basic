@@ -99,24 +99,23 @@ const AddCardModal: React.FC<AddCardModalProps> = ({
       className={styles.modal}
       classes={{ body: isMobile ? "" : "ph20" }}
       onClose={onClose}
-      isLightMode
     >
       <div className="mb20 flex align-center justify-between">
-        <Title font="saphiro" color="dark" variant={isMobile ? "h4" : "h1"}>
+        <Title color="dark" variant={isMobile ? "h4" : "h1"}>
           Add Card
         </Title>
       </div>
-      <InputLabel size="sm">Card Number</InputLabel>
+      <InputLabel>Card Number</InputLabel>
       <InputText
         value={cardNumber}
         onChange={handleCardNumber}
-        error={cardNumber?.toString().length > 16 ? "Card Number Length should be 16 digits" : ""}
+        error={(cardNumber || "")?.toString().length > 16 ? "Card Number Length should be 16 digits" : ""}
       />
-      <InputLabel className="mt20" size="sm">
+      <InputLabel className="mt20">
         First Name
       </InputLabel>
       <InputText value={firstName} onChange={handleFirstName} />
-      <InputLabel className="mt20" size="sm">
+      <InputLabel className="mt20">
         Last Name
       </InputLabel>
       <InputText className="mb20" value={lastName} onChange={handleLastName} />
