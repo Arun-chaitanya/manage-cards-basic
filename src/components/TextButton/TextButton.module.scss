@@ -1,0 +1,73 @@
+@import "src/styles/variables";
+
+.root {
+  font-family: $body-font;
+  font-size: 1.6rem;
+  display: inline-block;
+  transition: $transition-default;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.underlined {
+  text-decoration-line: underline;
+}
+
+.loading {
+  color: $white;
+}
+
+.primary {
+  color: $primary;
+}
+
+.light {
+  color: $white;
+}
+
+.grey {
+  color: $shade1;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.heavy {
+  font-weight: 700;
+}
+
+.xxs {
+  font-size: 1.2rem;
+}
+
+.xs {
+  font-size: 1.3rem;
+}
+
+.sm {
+  font-size: 1.4rem;
+}
+
+.md {
+  font-size: 1.6rem;
+}
+
+.lg {
+  font-size: 1.8rem;
+}
+
+.xl {
+  font-size: 2rem;
+}

@@ -1,0 +1,111 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.primary {
+  @include body-font(1.6rem, 400);
+}
+
+.light {
+  color: $white;
+}
+
+.grey {
+  color: $grey;
+}
+
+.grey1 {
+  color: $grey1;
+}
+
+.grey2 {
+  color: $grey2;
+}
+
+
+.dark {
+  color: $dark;
+}
+
+.black {
+  color: $black;
+}
+
+.danger {
+  color: $failure;
+}
+
+.success {
+  color: $green;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.primary1 {
+  color: $primary1;
+}
+
+.info {
+  color: $info;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.xxs {
+  font-size: 9px;
+}
+
+.xs {
+  font-size: 12px;
+}
+
+.sm {
+  font-size: 13px;
+}
+
+.md {
+  font-size: 14px;
+}
+
+.lg {
+  font-size: 15px;
+}
+
+.xl {
+  font-size: 16px;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.noWrap {
+  white-space: nowrap;
+}

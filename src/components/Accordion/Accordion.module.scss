@@ -1,0 +1,44 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.root {
+  position: relative;
+  outline: 1px $border solid;
+  border-radius: 1rem;
+}
+
+.accordion {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: $light-blue;
+  transition: $transition-default;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem #0000000A;
+  z-index: 2;
+  position: relative;
+}
+
+.active {
+  border-color: $primary-color;
+}
+
+.content {
+  padding: 1.5rem 3rem;
+}
+
+.icon {
+  transition: $transition-default;
+}
+
+.toggled {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  height: 2rem;
+  width: 2rem;
+}

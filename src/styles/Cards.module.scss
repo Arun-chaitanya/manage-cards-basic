@@ -1,0 +1,152 @@
+@import "src/styles/variables";
+
+.transactionLogo {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $light-blue;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.card {
+  background-color: $green;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 3.5rem;
+  position: relative;
+  z-index: 2;
+  margin-top: -2rem;
+}
+
+.freezedCard {
+  background-color: $red;
+}
+
+.cardPlaceholder {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cardLogo {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3.5rem;
+}
+
+.placeHolderDot {
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  background: $white;
+}
+
+.actions {
+  margin-top: 4rem;
+  padding: 2.5rem 2.5rem;
+  border-radius: 2rem;
+  background-color: $light-blue;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  @media (max-width: $screen_sm) {
+    gap: 1rem;
+    margin-top: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+.transaction {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $border2;
+  margin-bottom: 2rem;
+}
+
+.transactionAction {
+  background-color: $primary1;
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.balanceSymbol {
+  background-color: $green;
+  padding: 2px 13px;
+  border-radius: 0.5rem;
+}
+
+.desktopCardView {
+  padding: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem #00000014;
+}
+
+.desktop {
+  padding: 7.5rem;
+}
+
+.mobile {
+  position: relative;
+  height: calc(100vh - 1rem);
+  overflow: scroll;
+}
+
+.sticky {
+  padding-top: 2.5rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  height: 500px;
+  background-color: $primary-color;
+}
+
+.bottom {
+  position: relative;
+  margin-top: 480px;
+  background-color: $white;
+  z-index: 2;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.allTransaction {
+  cursor: pointer;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  background-color: #edfff5;
+  border: #ddffec 1px solid;
+  position: relative;
+  z-index: 1;
+}
+
+.showCard {
+  background-color: $white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+  padding: 5px 10px calc(2rem + 5px);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.modal {
+  max-width: 50rem;
+}
+
+.freezedTag {
+  background-color: $black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  position: absolute;
+}

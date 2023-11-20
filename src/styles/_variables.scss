@@ -1,0 +1,62 @@
+$white: #fff;
+$black: #000;
+
+$primary-bg: #fff6f1;
+$primary-color: #0c365a;
+$primary1: #325baf;
+$primary-light: #23cefd;
+$primary-disabled: rgba($primary-color, 0.4);
+$primary-border: rgba($primary-color, 0.17);
+
+$success: #3d9244;
+$failure: #d12020;
+$failure2: #ff8888;
+$failure3: #ffeeee;
+$info: #0155a0;
+
+$light: $white;
+$dark: #151516;
+$dark2: #130f26; //Observed for back < arrows
+
+$grey: #aaaaaa; //Observed for time in cards
+$grey1: rgba(#ffffff, 0.3); //Observed for time in cards
+$grey2: rgba(#000, 0.3);
+
+$modal_backdrop: rgba($black, 0.54);
+
+$transition-default: 250ms ease-in-out all;
+
+$screen_xs: 550px;
+$screen_sm: 760px;
+$screen_md: 1020px;
+$screen_lg: 1270px;
+$screen_xl: 1420px;
+
+$body-font: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+  Droid Sans, Helvetica Neue, sans-serif;
+
+$white: #fff;
+$black: #000;
+$background: $black;
+$surface1: #191919;
+$surface2: #141419;
+$shade1: #c7c8d1;
+$shade2: #9295a6;
+$shade3: #363640;
+$shade4: #333333;
+$shade5: #121215;
+$shade0: #545454;
+$border: #f0f0f0;
+$border2: #f5f5f5;
+$primary: #3c5df6;
+$primary0: #141f51;
+$yellow: #ffd229;
+$green: #01d167;
+$red: #ff5e5e;
+$red2: #fd004c;
+$pink: #ec5785;
+$light-blue: #edf3ff;
+
+$common-shadow: -4px 0 4px rgba($black, 0.2);
+
+$transition-default: 250ms ease-in-out all;

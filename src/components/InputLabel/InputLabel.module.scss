@@ -1,0 +1,11 @@
+@import "src/styles/variables";
+
+.root {
+  font-family: $body-font;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-transform: capitalize;
+}
